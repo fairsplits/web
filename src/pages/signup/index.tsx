@@ -75,7 +75,7 @@ export function SignupPage() {
             borderRadius: 2,
           }}
         >
-          <h4 className="mb-8 text-center text-2xl">Create account</h4>
+          <h4 className="mb-8 text-center text-2xl">Create account </h4>
 
           <form onSubmit={handleSubmit(onSubmit)}>
             <Grid container spacing={2}>
