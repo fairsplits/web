@@ -26,7 +26,7 @@ export default {
         "Schemes-Surface": "#fff8ef",
         "Schemes-On-Surface": "#1f1b10",
         "Schemes-Surface-Variant": "#ede2c6",
-        "Schemes-On-Surface-Variant": "#4d4632",
+        "Schemes-On-Surthemeace-Variant": "#4d4632",
         "Schemes-Outline": "#7f775f",
         "Schemes-Outline-Variant": "#d0c6ab",
         "Schemes-Shadow": "#000000",
@@ -63,6 +63,11 @@ export default {
         "sys-light-debt": "#D06117",
         "sys-light-credit": "#15832D",
         "sys-light-on-surface": "#1F1B10",
+      },
+
+      fontFamily: {
+        Mono: ["Space Mono"],
+        Grotesk: ["Space Grotesk"],
       },
     },
   },
