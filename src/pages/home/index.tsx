@@ -1,8 +1,6 @@
 import React from "react";
 import { TopBar } from "../../modules/home/top-bar";
 
-// Assets
-
 const HomePage: React.FC = () => {
   return (
     <div className="w-full h-full min-h-screen flex flex-col">

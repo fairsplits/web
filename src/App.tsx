@@ -4,6 +4,7 @@ import { SignupPage } from "./pages/signup";
 import { InstallPage } from "./pages/signup/install";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import HomePage from "./pages/home";
+import { PrivacyPage } from "./pages/privacy";
 
 const queryClient = new QueryClient();
 
@@ -12,9 +13,10 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router>
         <Routes>
-          <Route path="/" element={<SignupPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<SignupPage />} />
           <Route path="/install" element={<InstallPage />} />
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
         </Routes>
       </Router>
     </QueryClientProvider>
