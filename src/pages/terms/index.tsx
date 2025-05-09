@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 export const TermsPage = (): ReactElement => {
   return (
-    <div className="prose px-52 py-12">
+    <div className="prose-sm lg:prose-base px-12 md:px-52 py-12">
       <h1>Terms and Conditions</h1>
       <p>Last updated: May 09, 2025</p>
       <p>Please read these terms and conditions carefully before using Our Service.</p>

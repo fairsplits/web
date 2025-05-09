@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 export const PrivacyPage = (): ReactElement => {
   return (
-    <div className="prose px-52 py-12">
+    <div className="prose-sm lg:prose-base px-12 md:px-52 py-12">
       <strong>Terms &amp; Conditions</strong>
       <br />
       <p>
