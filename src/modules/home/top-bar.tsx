@@ -8,11 +8,14 @@ export const TopBar = (): ReactElement => {
       </div>
 
       <div className="hidden md:flex items-center gap-4">
-        <a href="#" className="flex-shrink-0">
+        {/* <a href="#" className="flex-shrink-0">
           <img src="/apple-download-btn-small.png" alt="Download on App Store" className="h-10" />
-        </a>
+        </a> */}
 
-        <a href="#" className="flex-shrink-0">
+        <a
+          href="https://play.google.com/store/apps/details?id=in.fairsplits.app"
+          className="flex-shrink-0"
+        >
           <img
             src="/playstore-download-btn-small.png"
             alt="Get it on Google Play"
