@@ -21,14 +21,17 @@ const HomePage: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center">
-            <a href="#" className="transition-transform hover:scale-105">
+            {/* <a href="#" className="transition-transform hover:scale-105">
               <img
                 src="/apple-download-btn-small.png"
                 alt="Download on App Store"
                 className="h-12"
               />
-            </a>
-            <a href="#" className="transition-transform hover:scale-105">
+            </a> */}
+            <a
+              href="https://play.google.com/store/apps/details?id=in.fairsplits.app"
+              className="transition-transform hover:scale-105"
+            >
               <img
                 src="/playstore-download-btn-small.png"
                 alt="Get it on Google Play"

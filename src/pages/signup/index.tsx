@@ -23,7 +23,7 @@ import { emailSchema, passwordSchema, phoneNumberSchema } from "../../constants/
 import { useSignupMutation } from "../../queries/auth/auth.queries";
 import { sanitizePhoneNumber } from "../../utils/number.utils";
 import { ErrorMessage } from "../../components/form/error-msg";
-import { useNavigate } from "react-router";
+import { useNavigate, useSearchParams } from "react-router";
 
 const SignupSchema = z.object({
   firstName: z.string({ message: "First name is required" }),
@@ -35,7 +35,8 @@ const SignupSchema = z.object({
 type SignUpSchemaType = z.infer<typeof SignupSchema>;
 
 export function SignupPage() {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
 
   const {
     register,
@@ -57,8 +58,15 @@ export function SignupPage() {
     const { phoneNo } = data;
 
     const sanitizedPhoneNo = sanitizePhoneNumber(phoneNo);
+    const inviteCode = searchParams.get("inviteCode");
 
-    createUser({ ...data, phoneNo: sanitizedPhoneNo }).then(() => {
+    const userData = {
+      ...data,
+      phoneNo: sanitizedPhoneNo,
+      ...(inviteCode && { inviteCode }),
+    };
+
+    createUser(userData).then(() => {
       navigate("/install");
     });
   };
