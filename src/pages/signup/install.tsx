@@ -18,7 +18,7 @@ export function InstallPage() {
 
           <div className="space-y-4 flex flex-col items-center mt-4">
             <a
-              href="https://play.google.com/store"
+              href="https://play.google.com/store/apps/details?id=in.fairsplits.app&hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="block transition-transform hover:scale-105"
@@ -31,7 +31,7 @@ export function InstallPage() {
             </a>
 
             <a
-              href="https://apps.apple.com"
+              href="https://apps.apple.com/in/app/fairsplits/id6747156264"
               target="_blank"
               rel="noopener noreferrer"
               className="block transition-transform hover:scale-105"
