@@ -8,10 +8,7 @@ export const TopBar = (): ReactElement => {
       </div>
 
       <div className="hidden md:flex items-center gap-4">
-        <a
-          href="https://apps.apple.com/in/app/fairsplits/id6747156264"
-          className="block transition-transform hover:scale-105"
-        >
+        <a href="https://apps.apple.com/in/app/fairsplits/id6747156264" className="flex-shrink-0">
           <img src="/apple-download-btn-small.png" alt="Download on App Store" className="h-10" />
         </a>
 
