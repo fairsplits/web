@@ -38,6 +38,19 @@ const HomePage: React.FC = () => {
                 className="h-12"
               />
             </a>
+
+            <a
+              href="https://apps.apple.com/in/app/fairsplits/id6747156264"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block transition-transform hover:scale-105"
+            >
+              <img
+                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+                alt="Download on the App Store"
+                className="h-12 object-contain"
+              />
+            </a>
           </div>
         </div>
 
