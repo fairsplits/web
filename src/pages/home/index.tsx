@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router";
 import { TopBar } from "../../modules/home/top-bar";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="w-full h-full min-h-screen flex flex-col">
+    <div className="w-full h-full flex flex-col">
       <TopBar />
 
-      <div className="bg-Schemes-Surface-Variant w-full h-full flex-1 flex flex-col lg:flex-row items-center px-6 lg:px-16 pt-12 relative overflow-hidden">
+      <div className="bg-Schemes-Surface-Variant w-full h-screen flex flex-col lg:flex-row items-center px-6 lg:px-16 pt-12 relative overflow-hidden">
         {/* Text Content */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left z-10 mb-8 lg:mb-0">
           <h1 className="text-3xl lg:text-5xl font-bold mb-6 text-Schemes-Primary font-Mono">
@@ -63,6 +64,20 @@ const HomePage: React.FC = () => {
           />
         </div>
       </div>
+
+      {/* Footer - appears after scrolling */}
+      <footer
+        className={`w-full py-4 px-6 lg:px-16 bg-Schemes-Surface-Variant border-t border-Schemes-Outline transition-opacity duration-300`}
+      >
+        <div className="flex justify-center items-center">
+          <Link
+            to="/privacy"
+            className="text-Schemes-On-Surface-Variant hover:text-Schemes-Primary transition-colors text-sm font-Grotesk"
+          >
+            Privacy Policy
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 };
